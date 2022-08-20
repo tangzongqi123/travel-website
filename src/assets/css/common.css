@@ -1,0 +1,64 @@
+:root {
+  /* 主题色 */
+  --primary-color: #ff9854;
+  --line-color: #faf8f9;
+  /*开始搜索 */
+  --theme-linear-gradient: linear-gradient(90deg, #fa8c1d, #fcaf3f);
+  /* nav-bar */
+  --van-primary-color: var(--primary-color) !important;
+  --van-nav-bar-title-text-color: var(--primary-color) !important;
+  /* 全局修改: 任何地方只要用到-van-tabbar-item-icon-size都会被修改掉 */
+  /* --van-tabbar-item-icon-size: 30px !important; */
+
+  --van-search-left-icon-color: var(--primary-color) !important;
+}
+
+body {
+  font-size: 14px;
+}
+
+/* 去除底部tabbar */
+.top-page {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.bottom-gray-line {
+  border-bottom: 1px solid var(--line-color);
+}
+.icon_check {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/detail/icon_check.png) 0 0 / 100% 100%;
+}
+.detail_icon_chat {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/detail/icon_chat.png) 0 0 / 100% 100%;
+}
+
+.detail_icon_order {
+  display: block;
+  width: 14px;
+  height: 17px;
+  background: url(../img/detail/icon_order.png) 0 0 / 100% 100%;
+}
+
+.ellipsis-text-1 {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-text-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
